@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  /* Colours */
+  --clr-primary: #000000;
+  --clr-secondary: #ffffff;
+  /* Font family */
+  --ff: "Space Grotesk", sans-serif;
+  /*  Font weight */
+  --fw-regular: 500;
+  --fw-medium: 700;
+  /* Font size */
+  --fs-40: 2.5rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+  body {
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary);
+  }
+
+  h1 {
+    margin-bottom: 22px;
+    margin-top: 50px;
+    font-size: var(--fs-40);
+    font-weight: var(--fw-medium);
+    display: flex;
+    align-items: center;
+  }
+  .todo-Wrapper {
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    color: var(--clr-secondary);
+    padding-left: 20px;
+    align-items: center;
+    border: 1px solid var(--clr-secondary);
+  }
+
+  .inputAdd {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 46px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+    border-radius: 5px;
+  }
+  .tagline {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: var(--fw-regular);
+    margin-bottom: 20px;
+  }
+
+  .list-container {
+    display: flex;
+    border: 2px solid #ffffff;
+    height: 79px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .listitem {
+    margin-left: 20px;
+  }
+
+  .listBtn {
+    width: max-content;
+    position: sticky;
+    left: 100%;
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  .edit {
+    margin-right: 15px;
+  }
+  .editInput {
+    display: flex;
+    border: 2px solid #ffffff;
+    height: 79px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .editbtn {
+    width: max-content;
+    position: sticky;
+    bottom: 342px;
+    left: 100%;
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+}
+
+/* Desktop view */
+
+@media (min-width: 769px) and (max-width: 1556px) {
+  body {
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary);
+    display: grid;
+    place-items: center;
+  }
+
+  h1 {
+    margin-bottom: 22px;
+    margin-top: 50px;
+    font-size: var(--fs-40);
+    font-weight: var(--fw-medium);
+    display: flex;
+    align-items: center;
+  }
+  .todo-Wrapper {
+    padding: 20px;
+    width: 600px;
+  }
+
+  input {
+    width: 100%;
+    height: 91px;
+    background-color: transparent;
+    color: var(--clr-secondary);
+    padding-left: 20px;
+    align-items: center;
+    border: 1px solid var(--clr-secondary);
+  }
+
+  .inputAdd {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 46px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+    border-radius: 5px;
+  }
+  .tagline {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: var(--fw-regular);
+    margin-bottom: 20px;
+  }
+
+  .list-container {
+    display: flex;
+    border: 2px solid #ffffff;
+    height: 79px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .listitem {
+    margin-left: 20px;
+  }
+
+  .listBtn {
+    width: max-content;
+    position: sticky;
+    left: 100%;
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  .edit {
+    margin-right: 15px;
+  }
+  .editInput {
+    display: flex;
+    border: 2px solid #ffffff;
+    height: 79px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .editbtn {
+    width: max-content;
+    position: sticky;
+    bottom: 366px;
+    left: 100%;
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+}
