@@ -182,7 +182,7 @@ svg {
 
 /* Desktop view */
 
-@media (min-width: 769px) and (max-width: 1556px) {
+@media (min-width: 769px) and (max-width: 2000px) {
   body {
     color: var(--clr-secondary);
     background-color: var(--clr-primary);
