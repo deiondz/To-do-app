@@ -186,8 +186,8 @@ svg {
   body {
     color: var(--clr-secondary);
     background-color: var(--clr-primary);
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   h1 {
