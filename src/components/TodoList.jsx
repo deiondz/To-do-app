@@ -11,14 +11,14 @@ function TodoList({ task, handleDelete, todoEdit }) {
             todoEdit(task.task, task.id);
           }}
         >
-          <i class="bx bxs-edit"></i>
+          <i className="bx bxs-edit"></i>
         </button>
         <button
           onClick={() => {
             handleDelete(task.id);
           }}
         >
-          <i class="bx bx-trash"></i>
+          <i className="bx bx-trash"></i>
         </button>
       </div>
     </div>

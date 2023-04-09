@@ -15,12 +15,13 @@ function TodoInput({ addTodo }) {
   return (
     <div className="input-container">
       <form onSubmit={handleSubmit}>
-        <input
+        <textarea
           type="text"
           value={value}
           onChange={handleChange}
           placeholder="What’s your plans for today?"
-        />
+          maxLength={130}
+        ></textarea>
         <button className="inputAdd">Add task</button>
       </form>
     </div>

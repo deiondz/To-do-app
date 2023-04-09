@@ -8,18 +8,19 @@ function TodoEdit({ task, todoEdit }) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    todoEdit(value, task.id);
+    value ? todoEdit(value, task.id) : todoEdit(task.task, task.id);
   };
 
   return (
     <div className="todo-Edit">
       <form onSubmit={handleSubmit}>
-        <input
+        <textarea
           type="text"
           value={value}
           onChange={handleChange}
-          className="editInput"
-        />
+          placeholder="Update"
+          maxLength={130}
+        ></textarea>
         <button className="editbtn">Edit</button>
       </form>
     </div>

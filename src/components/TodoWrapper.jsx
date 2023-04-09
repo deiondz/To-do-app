@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TodoInput from "./Todoinput";
 import TodoList from "./TodoList";
 import { v4 as uuidv4 } from "uuid";
@@ -7,6 +7,16 @@ uuidv4();
 
 function TodoWrapper() {
   const [list, newList] = useState([]);
+  useEffect(() => {
+    const list = JSON.parse(localStorage.getItem("list"));
+    if (list) {
+      newList(list);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("list", JSON.stringify(list));
+  }, [list]);
+
   const addTodo = (todo) => {
     newList([
       ...list,
