@@ -21,7 +21,7 @@ function TodoEdit({ task, todoEdit }) {
           placeholder="Update"
           maxLength={130}
         ></textarea>
-        <button className="editbtn">Edit</button>
+        <button className="editbtn">Update</button>
       </form>
     </div>
   );

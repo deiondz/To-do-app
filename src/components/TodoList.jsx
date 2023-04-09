@@ -6,19 +6,20 @@ function TodoList({ task, handleDelete, todoEdit }) {
       <p className="listitem">{task.task}</p>
       <div className="listBtn">
         <button
-          className="edit"
+          className="listBtn-child edit"
           onClick={() => {
             todoEdit(task.task, task.id);
           }}
         >
-          <i className="bx bxs-edit"></i>
+          Edit
         </button>
         <button
+          className="listBtn-child"
           onClick={() => {
             handleDelete(task.id);
           }}
         >
-          <i className="bx bx-trash"></i>
+          Delete
         </button>
       </div>
     </div>
