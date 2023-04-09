@@ -186,6 +186,18 @@ svg {
     color: var(--clr-primary);
     border-radius: 5px;
   }
+  .complete {
+    display: flex;
+    border: 2px solid #22ff00;
+    min-height: 79px;
+    max-height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
 }
 
 /* Desktop view */
@@ -288,5 +300,17 @@ svg {
   }
   .edit {
     margin-right: 10px;
+  }
+  .complete {
+    display: flex;
+    border: 2px solid #22ff00;
+    min-height: 79px;
+    max-height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
   }
 }

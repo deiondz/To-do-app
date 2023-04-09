@@ -38,6 +38,18 @@ function TodoWrapper() {
       })
     );
   };
+
+  /* Complete task */
+
+  const handleComplete = (id) => {
+    newList(
+      list.map((element) => {
+        return element.id === id
+          ? { ...element, completed: !element.completed }
+          : element;
+      })
+    );
+  };
   return (
     <div className="todo-Wrapper">
       <h1>To do list </h1>
@@ -54,6 +66,7 @@ function TodoWrapper() {
             key={index}
             handleDelete={handleDelete}
             todoEdit={todoEdit}
+            handleComplete={handleComplete}
           />
         )
       )}
