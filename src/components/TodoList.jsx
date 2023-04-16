@@ -15,7 +15,7 @@ function TodoList({ task, handleDelete, todoEdit, handleComplete }) {
   };
   return (
     <div className="list-container">
-      <p className={complete.css}>{task.task}</p>
+      <div className={complete.css}>{task.task}</div>
       <div className="listBtn">
         <button
           className="listBtn-child edit"

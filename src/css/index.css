@@ -286,31 +286,36 @@ svg {
     color: var(--clr-primary);
     border-radius: 5px;
   }
+
   .listitem {
     display: flex;
     border: 2px solid #ffffff;
     min-height: 79px;
-    max-height: max-content;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
   .edit {
     margin-right: 10px;
   }
   .complete {
     display: flex;
-    border: 2px solid #22ff00;
+    border: 2px solid #07ff17;
     min-height: 79px;
-    max-height: max-content;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 }

@@ -20,7 +20,6 @@ function TodoInput({ addTodo }) {
           value={value}
           onChange={handleChange}
           placeholder="What're your plans for today?"
-          maxLength={130}
         ></textarea>
         <button className="inputAdd">Add task</button>
       </form>
