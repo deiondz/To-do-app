@@ -171,6 +171,8 @@ svg {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
   .edit {
     margin-right: 10px;
@@ -197,6 +199,8 @@ svg {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    word-break: break-all;
+    white-space: pre-wrap;
   }
 }
 
